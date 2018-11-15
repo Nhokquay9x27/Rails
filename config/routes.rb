@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
-  get 'user/new'
-  root 'static_pages#home'
-  get  '/help',    to: 'static_pages#help', as: 'helf'
-  get  '/about',   to: 'static_pages#about'
-  get  '/contact', to: 'static_pages#contact'
+  root 'static_page#home'
+  get  '/help',    to: 'static_page#help', as: 'helf'
+  get  '/about',   to: 'static_page#about'
+  get  '/contact', to: 'static_page#contact'
+  get  '/signup',  to: 'users#new'
+  post '/signup',  to: 'users#create'
+  resources :users
 end
