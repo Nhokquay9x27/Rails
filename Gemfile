@@ -10,6 +10,8 @@ gem 'rails', '~> 5.2.1'
 
 gem 'bootstrap-sass', '3.3.7'
 
+gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
+
 gem 'bcrypt', '3.1.12'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
@@ -41,6 +43,8 @@ gem 'jbuilder', '~> 2.5'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require:false
+
+gem 'bullet'
 
 # gem 'rubocop', '~> 0.60.0', require:false
 
